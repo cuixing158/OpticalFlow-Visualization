@@ -13,6 +13,17 @@ This repo implements the visualization of optical flow color images. It adds a o
 
 Note: If you use [`opticalFlowRAFT`](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html) from Example 2/3 for optical flow computation, then you will need R2024b or later versions.
 
+## Syntax
+
+```matlab
+flowImage = flow2rgb(flow);
+```
+## Input Arguments
+
+flow: Object containing optical flow matrices,opticalFlow object
+
+Object containing optical flow velocity matrices, specified as an [opticalFlow](https://ww2.mathworks.cn/help/vision/ref/opticalflowobject.html) object.
+
 ## Example1
 
 Use opticalFlow to generate an 800x800x2 optical flow image, where the Vx and Vy directions point from the center of the image to the edges, and the magnitude increases gradually.
@@ -133,6 +144,7 @@ reset(flowModel)
 
 # References
 
+1. S. Baker, D. Scharstein, J. Lewis, S. Roth, M. J. Black, and R. Szeliski.A database and evaluation methodology for optical flow.In Proc. IEEE International Conference on Computer Vision (ICCV), 2007.
 1. [tomrunia/OpticalFlow\_Visualization: Python optical flow visualization following Baker et al. (ICCV 2007) as used by the MPI\-Sintel challenge](https://github.com/tomrunia/OpticalFlow_Visualization)
-2. [https://github.com/weihuang527/optical\-flow](https://github.com/weihuang527/optical-flow)
-3. [https://github.com/ltkong218/FastFlowNet](https://github.com/ltkong218/FastFlowNet)
+1. [https://github.com/weihuang527/optical\-flow](https://github.com/weihuang527/optical-flow)
+1. [https://github.com/ltkong218/FastFlowNet](https://github.com/ltkong218/FastFlowNet)
