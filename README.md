@@ -1,12 +1,13 @@
 
 # OpticalFlow Visualization
 
+## :eyes: Overview
 [![View OpticalFlow-Visualization on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://ww2.mathworks.cn/matlabcentral/fileexchange/175668-opticalflow-visualization)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=cuixing158/OpticalFlow-Visualization&file=Examples.mlx)
 
 This repo implements the visualization of optical flow color images. It adds a object\-function [`flow2rgb`](./flow2rgb.m) for dense optical flow visualization to the built\-in object [`opticalFlow`](https://ww2.mathworks.cn/help/vision/ref/opticalflowobject.html). Compared to the existing [open\-source Python version](https://github.com/tomrunia/OpticalFlow_Visualization/tree/master), the code is more concise and intuitive, with the core implementation being only 10 lines!
 
-## Requirements
+## :clipboard: Requirements
 
 - MATLAB R2015a or later
 - Computer Vision Toolbox™
@@ -14,18 +15,21 @@ This repo implements the visualization of optical flow color images. It adds a o
 >[!NOTE]
 > If you use [`opticalFlowRAFT`](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html) from Example 2/3 for optical flow computation, then you will need R2024b or later versions.
 
-## Syntax
+## :scroll: Syntax
 
 ```matlab
 flowImage = flow2rgb(flow);
 ```
-## Input Arguments
+## :inbox_tray: Input Arguments
 
 flow: Object containing optical flow matrices,opticalFlow object
 
 Object containing optical flow velocity matrices, specified as an [opticalFlow](https://ww2.mathworks.cn/help/vision/ref/opticalflowobject.html) object.
 
-## Example1
+<details>
+<summary> Example1 code collapse</summary>
+    
+## :notebook: Example1
 
 Use opticalFlow to generate an 800x800x2 optical flow image, where the Vx and Vy directions point from the center of the image to the edges, and the magnitude increases gradually.
 
@@ -68,7 +72,12 @@ figure;imshow(flowImage)
 
 ![figure_1.png](README_media/figure_1.png)
 
-## Example2: two adjacent images optical flow
+</details>
+
+<details>
+<summary>Example2: two adjacent images optical flow</summary>
+    
+##  :notebook: Example2: two adjacent images optical flow
 
 ```matlab
 img1_path = "images/frame_0006.png";
@@ -89,7 +98,7 @@ flow = estimateFlow(flowModel,frame2);
 reset(flowModel)
 ```
 
-## visualization
+## :eyes: visualization
 
 ```matlab
 figure;imshow(frame1)
@@ -106,8 +115,12 @@ figure;imshow(flowImage)
 ```
 
 ![figure_3.png](README_media/figure_3.png)
+</details>
 
-# Example3: video optical flow
+<details>
+<summary>Example3: video optical flow</summary>
+    
+##  :notebook: Example3: video optical flow
 
 use same example as [https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s\_tid=doc\_ta\#mw\_d94e3efa\-966f\-4df7\-a731\-87dabf2be68e](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s_tid=doc_ta#mw_d94e3efa-966f-4df7-a731-87dabf2be68e)
 
@@ -142,8 +155,9 @@ end
 reset(flowModel)
 
 ```
+</details>
 
-# References
+# :books: References
 
 1. S. Baker, D. Scharstein, J. Lewis, S. Roth, M. J. Black, and R. Szeliski.A database and evaluation methodology for optical flow.In Proc. IEEE International Conference on Computer Vision (ICCV), 2007.
 1. [tomrunia/OpticalFlow\_Visualization: Python optical flow visualization following Baker et al. (ICCV 2007) as used by the MPI\-Sintel challenge](https://github.com/tomrunia/OpticalFlow_Visualization)
