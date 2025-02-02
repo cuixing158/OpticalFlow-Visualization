@@ -4,6 +4,7 @@
 ## :eyes: Overview
 [![View OpticalFlow-Visualization on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://ww2.mathworks.cn/matlabcentral/fileexchange/175668-opticalflow-visualization)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=cuixing158/OpticalFlow-Visualization&file=Examples.mlx)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red)](https://raw.githubusercontent.com/cuixing158/OpticalFlow-Visualization/refs/heads/main/README_media/sponsors.jpg)
 
 This repo implements the visualization of optical flow color images. It adds a object\-function [`flow2rgb`](./flow2rgb.m) for dense optical flow visualization to the built\-in object [`opticalFlow`](https://ww2.mathworks.cn/help/vision/ref/opticalflowobject.html). Compared to the existing [open\-source Python version](https://github.com/tomrunia/OpticalFlow_Visualization/tree/master), the code is more concise and intuitive, with the core implementation being only 10 lines!
 
