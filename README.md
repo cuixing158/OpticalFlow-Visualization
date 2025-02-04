@@ -26,12 +26,12 @@ flowImage = flow2rgb(flow);
 flow: Object containing optical flow matrices,opticalFlow object
 
 Object containing optical flow velocity matrices, specified as an [opticalFlow](https://ww2.mathworks.cn/help/vision/ref/opticalflowobject.html) object.
+    
+## :notebook: Example1
 
 <details>
 <summary> Example1 code collapse</summary>
     
-## :notebook: Example1
-
 Use opticalFlow to generate an 800x800x2 optical flow image, where the Vx and Vy directions point from the center of the image to the edges, and the magnitude increases gradually.
 
 ```matlab
@@ -74,12 +74,12 @@ figure;imshow(flowImage)
 ![figure_1.png](README_media/figure_1.png)
 
 </details>
+    
+##  :notebook: Example2: two adjacent images optical flow
 
 <details>
 <summary>Example2: two adjacent images optical flow</summary>
     
-##  :notebook: Example2: two adjacent images optical flow
-
 ```matlab
 img1_path = "images/frame_0006.png";
 img2_path = "images/frame_0007.png";
@@ -117,12 +117,12 @@ figure;imshow(flowImage)
 
 ![figure_3.png](README_media/figure_3.png)
 </details>
+ 
+##  :notebook: Example3: video optical flow
 
 <details>
 <summary>Example3: video optical flow</summary>
-    
-##  :notebook: Example3: video optical flow
-
+   
 use same example as [https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s\_tid=doc\_ta\#mw\_d94e3efa\-966f\-4df7\-a731\-87dabf2be68e](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s_tid=doc_ta#mw_d94e3efa-966f-4df7-a731-87dabf2be68e)
 
 ```matlab
