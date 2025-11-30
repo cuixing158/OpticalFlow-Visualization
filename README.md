@@ -13,9 +13,6 @@ This repo implements the visualization of optical flow color images. It adds a o
 - MATLAB R2015a or later
 - Computer Vision Toolbox™
 
->[!NOTE]
-> If you use [`opticalFlowRAFT`](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html) from Example 2/3 for optical flow computation, then you will need R2024b or later versions.
-
 ## :scroll: Syntax
 
 ```matlab
@@ -77,9 +74,12 @@ figure;imshow(flowImage)
     
 ##  :notebook: Example2: two adjacent images optical flow
 
+>[!NOTE]
+> Following code use [`opticalFlowRAFT`](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html) built-in function to calculate optical flow,you will need R2024b or later versions.
+
 <details>
 <summary>Example2: two adjacent images optical flow</summary>
-    
+
 ```matlab
 img1_path = "images/frame_0006.png";
 img2_path = "images/frame_0007.png";
@@ -106,11 +106,9 @@ figure;imshow(frame1)
 hold on
 plot(flow,DecimationFactor=[10 10],ScaleFactor=0.45,color="g");
 ```
-
 ![figure_2.png](README_media/figure_2.png)
 
 ```matlab
-
 flowImage = flow2rgb(flow);
 figure;imshow(flowImage)
 ```
@@ -120,9 +118,11 @@ figure;imshow(flowImage)
  
 ##  :notebook: Example3: video optical flow
 
+>[!NOTE]
+> Following code use [`opticalFlowRAFT`](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html) built-in function to calculate optical flow,you will need R2024b or later versions.
+
 <details>
 <summary>Example3: video optical flow</summary>
-   
 use same example as [https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s\_tid=doc\_ta\#mw\_d94e3efa\-966f\-4df7\-a731\-87dabf2be68e](https://ww2.mathworks.cn/help/vision/ref/opticalflowraft.html?s_tid=doc_ta#mw_d94e3efa-966f-4df7-a731-87dabf2be68e)
 
 ```matlab
